@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook-Login</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .main{
+            border-bottom:1px solid grey;
+            height:90vh;
+            display:grid;
+            grid-template-columns:2fr 1fr;
+            
+        }
+        .footer{
+            color: grey;
+            text-align: center;
+            height: 10vh;
+        }
+        .left{
+            border-right:1px solid grey;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+        }
+        .right{
+           
+            
+
+        }
+        .logo{
+          
+             display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+        .logo img{
+            height: 110px;
+            width:110px;
+            
+            padding-left: 50px;
+            padding-top:50px;
+           
+        }
+        .image{
+           
+        }
+        .image img{
+           
+            height:100%;
+            width:100%;
+
+        }
+        p{
+            font-size: 80px;
+            padding:50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        span{
+            color: #1877F2;;
+        }
+        .login-form{
+            
+            display:flex;
+            flex-direction: column;
+            padding-top: 180px;
+            gap:20px; 
+        }
+        h3{
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+        }
+        input{
+            padding:10px;
+            width:450px;
+            margin-left:30px;
+            border-radius: 10px;
+            border:1px solid grey;
+        }
+        #login{
+            width:450px;
+            border-radius: 30px;
+            margin-left:30px;
+            padding:10px;
+            background-color: #1877F2;
+            color: white;
+            border:1px solid
+        }
+        #password{
+            width:450px;
+            border-radius: 30px;
+            margin-left:30px;
+            border:none;
+            background: none;
+            padding:10px;
+        }
+        #account{
+            width:450px;
+            border-radius: 30px;
+            padding:10px;
+            margin-left:30px;
+            border-color: #1877F2;
+            color: #1877F2;
+            background: none;   
+        }
+        #password:hover{
+            background-color: gainsboro;
+            cursor:pointer;
+        }
+        #account:hover{
+            background-color:gainsboro;
+            cursor:pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/3840px-Facebook_f_logo_%282021%29.svg.png" alt="logo">
+                <p>Explore the things <span>you love</span>.</p>
+            </div>
+            <div class="image">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/yB/r/83zWJdc6PJI.webp" alt="reference">
+            </div>
+        </div>
+        <div class="right">
+            <div class="login-form">
+                <h3>Log in to Facebook</h3>
+                <input type="text" placeholder="Email address or a mobile number">
+                <input type="password" placeholder="password">
+                <button id="login">Login</button>
+                <button id="password">Forgotten Password</button>
+                <button id="account">Create a new account</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <a href="">English</a>
+        <a href="">tamil</a> 
+        <a href="">malayalam</a>
+    </div>
+    
+</body>
+</html>
