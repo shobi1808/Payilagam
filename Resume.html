@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+
+        }
+        .container{
+            
+            height:100vh;
+            width:50%;
+            margin:auto; 
+            display:grid; /* oru layout ta split pana*/
+            grid-template-columns:1fr 2fr;
+            box-shadow:10px 10px 10px rgba(0,0,0,0.1);
+           }
+       .left{
+        /*border:1px solid red;*/
+        margin-left: 50px;
+        border-radius:10px 0px 0px;
+        display:flex;
+        flex-direction:column; 
+        justify-content:space-between;
+        padding:10px; 
+        background-color: #cca2f1;
+        }
+        ul{
+            padding:20px;
+        }
+        div img{
+            height:120px;
+            margin-left:30px;
+            border-radius:50%;
+        }
+        .banner{
+            
+            height:150px;
+            background-color: rgb(248, 198, 145);
+            margin-top:20px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            padding-top:30px;
+            padding-left:20px;  
+        }
+        .education{
+            
+            display:flex;
+            flex-direction:column;
+            padding:20px;
+        }
+        ol{
+            margin-top:20px;
+            margin-left:50px;
+        }
+        .certificates{
+            display:flex;
+            flex-direction:column;
+            padding:20px;
+
+            
+        }
+        .Projects{
+            display:flex;
+            flex-direction:column;
+
+        }
+        
+        
+        
+
+      
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+       
+            <div class="left">
+               
+                <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-qUvVuKBNQusLMLGA02dyqc-15W25i2EGdraeLV5o3g&s=10" alt="profile image"></div>
+                <h3>About Me</h3>
+                <p>I am recently graduated a BE in Computer science Engineering in Mangayarkarasi college of Engineering at Maduari .</p>
+                <h3>Skills</h3>
+     <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Java</li>
+            <li>UI&UX Design</li>
+        </ul>
+                <h3>Languages</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Tamil</li>
+                </ul>
+                <h3>Contact Me</h3>
+                <p>Email Id: shobika8003@gmail.com</p>
+                <p>Phone Number: 6380097450</p>
+                </div>
+
+ <div class="right">
+    <div class="banner">
+        <h3>R.Shobika</h3>
+        <p>Computer Science Engineer</p>
+    </div>
+    <div class="education">
+    <h3>Education</h3>
+    <ol>
+        <b><li>SSLC</li></b>
+        <p>Rose Matriculation Higher Secondary School</p>
+        <b><li>HSC</li></b>
+        <p>Madurai Arupukottai Nadar Uravin Murai Girls Higher Secondary School</p>
+        <b> <li>B.E.</li></b>
+        <p>Mangayarkarasi College of Engineering</p>
+    </ol>
+    </div>
+   
+    <div class="certificates">
+        <h3>Certificates</h3>
+        <ol>
+            <b><li>Phenix Softech Company</li></b>
+            <p> App Development Intern where i learned about how to develop a app by using a android studio</p>
+            <b><li>Busy Moon Webcreators</li></b>
+            <p>UI&UX Development Intern where i learned about UI&UX development by using Adobe XD and also I get a hands on experience in real time projects </p>
+        </ol>
+    </div>
+    <div class="Projects">
+        <h3 style="margin-left: 20px;">Projects</h3>
+        <ol>
+            <b><li>COLLEGE EVENT MANAGEMENT SYSTEM</li></b>
+            <p>A web-based application for managing college events.</p>
+            <b><li>GOLD MANAGEMENT SYSTEM</li></b>
+            <p>A web-based application for managing gold transactions.</p>
+
+        </ol>
+    </div>
+
+            </div>
+
+
+    </div>
+    
+</body>
+</html>
