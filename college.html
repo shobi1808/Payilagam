@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College</title>
+    <script src="https://kit.fontawesome.com/819da04ac6.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .header{
+            /* margin-top: 400px; */
+            border:1px solid black;
+            height:25vh;
+            background-color: #1159af;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            padding-top: 50px;
+            
+        }
+        .nav1{
+            display:flex;
+            justify-content:center;
+            gap:20px;  
+            width:100%;
+            margin-bottom: 50px;
+        }
+         .main{
+            background-color: rgb(193, 186, 186);
+         
+          
+        }
+        .headimg img{
+            width:1000px;
+           
+            margin-bottom:50px;
+          
+        }  
+       .home{
+        display:flex;
+        height:30px;
+        background-color: rgba(0, 34, 255, 0.47);
+        color:aliceblue;
+        text-align: center;
+       }
+       .career{
+        display:flex;
+        height:30px;
+        background-color: brown;
+        color:aliceblue;
+       }
+       .admission{
+        display:flex;
+        height:30px;
+        background-color: brown;
+        color:aliceblue;
+       } 
+       .mainnav{
+        
+        height:5vh;
+        background-color: rgb(21, 10, 228);
+        display:flex;
+        justify-content: center;
+       
+       }
+       .mainnav a{
+        color:white;
+        border-right:1px solid white;
+        width:120px;
+        text-align: center;
+        text-decoration: none;
+       }
+       .mainnav a:hover{
+        color:gold;
+        border-right:1px solid ;
+       }
+       .facebook img{
+        height:20px;
+        width:20px;
+        border-radius: 50px;
+        margin-left: 5px;
+       }
+       .Twitter img{
+        height:25px;
+        width:25px;
+        border-radius: 50px;
+        margin-left: 5px;
+       }
+       .youtube img{
+          height:25px;
+        width:25px;
+        border-radius: 50px;
+        margin-left: 5px;
+       }
+       .adimg{
+        display: flex;
+        justify-content: center;
+       }
+       .adimg img{
+        width:1200px;
+       }
+       .golden{
+        border:7px solid gold;
+        width:1200px;
+        margin:auto;
+       }
+      
+        .news{
+           
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            gap:0.5em;
+            height:50px;
+            margin-top: 20px;
+        }
+        .news h2{
+            width:200px;
+            
+            margin-left:100px;
+            background-color: #1159af;
+            color:white;
+            text-align:center;
+            padding-top:10px;
+        }
+        .headnews {
+            margin-right:90px;
+            text-align:center;
+            color:white;
+            background-color:red;
+            padding-top:10px;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+       .headnews p {
+            Animation: motion 20s linear infinite;
+        }
+        
+        @keyframes motion{
+            from{
+                transform: translatex(20%);
+            }
+            to{
+                transform:translatex(-20%);
+            }
+
+        }
+        .about{
+            
+            height:90vh;
+            width:1200px;
+            margin:auto;
+            margin-top:20px;
+            display:grid;
+            grid-template-columns: 3fr 3fr;
+            background-color: white;
+        }
+         .left{
+            
+           
+        }
+        .left h2{
+           
+            background-color:#1159af ;
+            color:white;
+            width: 500px;
+            height:40px;
+            padding-left:40px;
+        }
+        .left p{
+          
+            width:450px;
+            margin-left:100px;
+            margin-top:100px;
+        }
+        .right{
+            
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .top{
+           
+        }
+        .top iframe{
+            padding-left: 90px;
+            padding-top:40px;
+        }
+        .top p{
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left:90px;
+            font-size: 20px;
+        }
+        .bottom{
+           
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            background-color: #1159af;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 80px;
+            margin-left: 90px;
+            margin-right: 90px;
+            color:white;
+        }
+        .stud{
+            padding:30px;
+        }
+        .book{
+            padding:30px;
+        }
+        .mgi{
+           
+            height:40px;
+            width:1200px;
+            margin:auto;
+            margin-top: 20px;
+            background-color: #1159af;
+            color:white;
+            padding-left: 50px;
+        }
+        .photo{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:1em;
+            width:1200px;
+            margin:auto;
+            margin-top:20px;
+        }
+        .delhi{
+            
+              display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mce{
+           
+              display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .art{
+           
+              display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .md{
+        
+        }
+        .md:hover{
+            transform:scale(102%);
+        }
+        #mdchair{
+            
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap:10px;
+            background:linear-gradient(blue,red);
+            color:white;
+        }
+        .chairman{
+            
+        }
+        .chairman:hover{
+              transform:scale(102%);
+        }
+        #vicechair{
+          
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap:10px;
+            background:linear-gradient(blue,red);
+            color:white;
+
+        }
+        .princi{
+            
+        }
+        .princi:hover{
+              transform:scale(102%);
+        }
+        #Principal{
+           
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap:10px;
+            background:linear-gradient(blue,red);
+            color:white;
+        }
+        .latest{
+           
+            height:50px;
+            width:1200px;
+            background-color: #1159af;
+            color:white;
+            margin:auto;
+            margin-top:20px;
+        }
+        .events{
+            display: flex;
+            justify-content: center;
+            width:300px;
+            gap:20px;
+            padding-left:750px;
+            margin-top:20px;
+        }
+        .partner{
+             display: flex;
+             justify-content: center;
+             gap:30px;
+             margin-top: 20px;
+             ;
+        }
+        .calendar{
+    
+        }
+        .calendar img{
+            width:1250px;
+            height:500px;
+            padding-left:280px;
+            padding-top:20px;
+        }
+    
+
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+       <div class="headimg">
+         <img src="https://mce-madurai.ac.in/wp-content/uploads/2024/03/logo_mce-1024x98.png">
+         </div>
+        <div class="nav1">
+            <div class="home">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+            </div>
+            <div class="career">
+            <i class="fa-solid fa-clipboard-user"></i>
+            <p>Careers</p>
+            </div>
+            <div class="admission">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>Admission</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mainnav">
+            <a href="">About Us</a>
+            <a href="">Campus<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">Student Corner<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">Gallery<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">Placements<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">Mandatory<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">IQAC</a>
+            <a href="">NIRF<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">Departments<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">Contact</a>
+            <div class="facebook">
+                <a href="https://www.facebook.com/mce.madurai/?_rdr" style="border:none;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3BXVY0T3n1z1rAorbj5aSlYdMaXBCyWXtQ&s">
+                </a>
+            </div>
+            <div class="Twitter">
+                <a href="http://mce5536/" style="border:none;">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/495/987/non_2x/twitter-social-media-logo-icon-free-png.png">
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/watch?v=ckF8TULNKec&t=6s" style="border:none;">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/042/127/234/small/white-square-bordered-youtube-logo-on-transparent-background-free-png.png">
+                </a>
+            </div>
+        </div>
+        <div class="golden"></div>
+        <div class="adimg">
+            <img src="https://mce-madurai.ac.in/wp-content/uploads/2026/04/placement.jpeg">
+        </div>
+        <div class="headline">
+            <div class="news">
+                <h2>Latest news</h2>
+            <div class="headnews">
+                <p>MoU Between MCE and Dotcom Infoway Madurai on 22-04-2026</p>
+            </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="left">
+                <h2>ABOUT OUR COLLEGE</h2>
+                <p><b>MANGAYARKARASI GURU INSTITUTION</b> is endowed by our
+                     Founder Amarar K. PITCHAIAH PILLAI is standing out as a premier 
+                     center of Higher learning with a mission of pursuing excellence in
+                      education and research.</p>
+                <br>
+                <p><b>MANGAYARKARASI COLLEGE OF ENGINEERING </b>is under the aegis of Mangayarkarasi Educational Trust which is striving in the field of education for the last seventy five years in Madurai, the cultural capital of Tamil Nadu. The trust is running many educational institutions from Nursery to Engineering education. It has nearly 15000 students and 650 staffs to promote a quality education with a traditional touch to work for the service of humanity and promotion of human values</p>
+            </div>
+
+            <div class="right">
+                <div class="top">
+                    <iframe width="500" height="215" src="https://www.youtube.com/embed/ckF8TULNKec?si=c0xHD6Ow64J71Afe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p> MANGAYARKARASI COLLEGE OF ENGINEERING</p>
+                </div>
+                <div class="bottom">
+                    <div class="stud">
+                        <h1>1200+</h1>
+                        <p>Student</p>
+                    </div>
+                    <div class="book">
+                        <h1>11,070+</h1>
+                        <p>Books</p>
+                    </div>
+                    <div class="Depart">
+                        <h1>7+</h1>
+                        <p>Departments</p>
+                    </div>
+                    <div class="muo">
+                        <h1>25+</h1>
+                        <p>MoU'S</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="mgi">
+            <h1>MGI GURU INSTITUTIONS</h1>
+        </div>
+        <div class="photo">
+            <div class="delhi">
+                <h1>DWPS School</h1>
+                <a href="" style="text-decoration: none;color:white;">know more</a>
+            </div>
+            <div class="mce">
+                <h1>Mangayarkarasi college of Engineering</h1>
+                <a href="" style="text-decoration: none;color:white;">know more</a>
+            </div>
+            <div class="art">
+                <h1>Mangayarkarasi Arts And Science College</h1>
+                <a href="" style="text-decoration: none;color:white;">know more</a>
+            </div>
+            <div class="md">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2025/11/Secretary-2-1.jpg" style="width: 400px;">
+                <div id="mdchair">
+                    <h2>Chairman's Desk</h2>
+                    <p>Dr. P. ASHOK KUMAR</p>
+                    <a href="" style="text-decoration: none;color:white;">view more</a>
+                </div>
+            </div>
+            <div class="chairman">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2025/11/Director-1.png"  style="width: 400px;">
+                <div id="vicechair">
+                     <h2> Vice Chairman's Desk</h2>
+                    <p>Er. A. SHAKTI PRANESH</p>
+                    <a href="" style="text-decoration: none;color:white;">view more</a>
+                </div>
+            </div>
+            <div class="princi">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2025/11/principal-1.jpg"  style="width: 400px;">
+                <div id="Principal">
+                    <h2> Principal's Desk</h2>
+                    <p>Dr. J.KARTHIKEYAN</p>
+                    <a href="" style="text-decoration: none;color:white;">view more</a>
+                </div>
+            </div>
+        </div>
+         <div class="latest">
+            <h1>Latest Event</h1>
+        </div>
+        <div class="events">
+            <i class="fa-solid fa-angle-left" style="margin-top: 50px;"></i>
+            <div class="img1">
+              <img src="https://mce-madurai.ac.in/wp-content/uploads/2026/01/seminar3.jpeg">
+              </div>
+            <div class="img2">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2025/11/workshop-4.jpg">
+            </div>
+            <div class="img3">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2025/11/workshop-5.jpg">
+            </div>
+            <div class="img4">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2026/04/mou-cplab.jpg">
+            </div>
+            <i class="fa-solid fa-angle-right" style="margin-top:50px;"></i>
+
+        </div>
+        <div class="partner">
+            <i class="fa-solid fa-angle-left" style="margin-top: 30px;"></i>
+            <div class="pat1">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2024/09/vi_log.jpg">
+            </div>
+            <div class="pat2">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2024/09/winways.jpg">
+            </div>
+            <div class="pat3">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2024/09/young-india.jpg">
+            </div>
+            <div class="pat4">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2024/09/elysim.jpg">
+            </div>
+            <div class="pat5">
+                <img src="https://mce-madurai.ac.in/wp-content/uploads/2024/09/kalvi-logo.jpg">
+            </div>
+            <i class="fa-solid fa-angle-right" style="margin-top:30px;"></i>
+        </div>
+        <div class="calendar">
+            <img src="callendar.png" alt="cal">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="table" style="background-color: brown;color:white;">
+            <table >
+                <tr>
+                    <th>
+                        <b>ABOUT US</b>
+                    </th>
+                    <th>
+                        <b>LINK</b>
+                    </th>
+                    <th>
+                        <b>CONTACT US</b>
+                    </th>
+                    <th>
+                        <b>LOCATION</b>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="width:550px;">MANGAYARKARASI COLLEGE OF ENGINEERING is under the aegis of Mangayarkarasi Educational Trust which is striving in the field of education for the last seventy five years in Madurai, the cultural capital of Tamil Nadu.</td>
+                    <td>
+                        <ul style="list-style: none;">
+                            <li>Home</li>
+                            <li>Aboutus</li>
+                            <li>Campus</li>
+                            <li>Admission</li>
+                            <li>Contact</li>
+                            <li>Grievance</li>
+                        </ul>
+                    </td>
+                    <div class="contactlist" style="display:flex;justify-content: center;">
+                    <td >
+
+                        <ul style="list-style: none;">
+                            <li>
+                                                        <i class="fa-solid fa-location-dot"></i>
+                        <p>7-1-139, 1st street, Mangayarkarasi Nagar, Paravai, Madurai - 625 402.
+</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+914522668635</p>
+                            </li>
+                            <li>
+                                 <i class="fa-solid fa-phone"></i>
+                                 <p>+914522665455</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelopes-bulk"></i>
+                                <p>mangai.enggcoll@gmail.com</p>
+                            </li>
+                        </ul>
+
+                    </td>
+                    </div>
+                    <td>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.7288733073815!2d78.06593117479295!3d9.95650119014672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c971f88cc2d7%3A0xcbb7c2f8ecff2b75!2sMangayarkarasi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1782311082952!5m2!1sen!2sin" width="400" height="250" style="border:0; padding-left:10px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin "></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button style="border:1px solid black;height:50px;width:80px;border-radius:10px;background-color:blue;color:white">
+                            read more
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="copy" style="border:1px solid #1159af;background-color: #1159af;color:white;padding-left:500px;">
+        <p>  © 2025 Mangayarkarasi College Of Engineering – Designed and Developed by Winways </p>
+        </div>
+    </div>
+    
+</body>
+</html>
